@@ -2,7 +2,7 @@
   "name": "neighborhood-map",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://koi20555.github.io/neighbourhood-map-react",
+  "homepage": ".",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
