@@ -38,7 +38,7 @@ class App extends Component {
   componentWillReceiveProps({isScriptLoadSucceed}){
 
     // Check if script is loaded and if map is defined
-    if (isScriptLoadSucceed && !this.state.mapReady && MAP_KEY == "" || MAP_KEY == "AIzaSyAOyaSkquBkYcGxPsSunyRaT7e3GQDixnA" ) {
+    if (isScriptLoadSucceed && !this.state.mapReady && (MAP_KEY === "" || MAP_KEY === "AIzaSyAOyaSkquBkYcGxPsSunyRaT7e3GQDixnA")) {
 
       // create map
       const map = new window.google.maps.Map(document.getElementById('map'), {

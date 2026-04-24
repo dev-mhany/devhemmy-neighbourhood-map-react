@@ -49,14 +49,10 @@ export const getFSLocations = (mapCenter) => {
     const goodPlaces = places.filter( place => place.location.address && place.location.city && place.location.city === "Hurghada");
     // sort restaurants in area for trusted ones  before updating state
     if(goodPlaces.length >=10 ){
-      goodPlaces ;
-
       goodPlaces.sort(sortName);
       return goodPlaces;
 
     }else{
-      places;
-
       places.sort(sortName);
       return places;
 
